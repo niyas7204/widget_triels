@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trywidgets/implicit_animation/imp_home.dart';
+import 'package:trywidgets/pip/pip.dart';
 import 'package:trywidgets/swipe_buttom/swipe_button.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SwipeButtonHomePage(),
+      home: const PipViewPage(),
     );
   }
 }
