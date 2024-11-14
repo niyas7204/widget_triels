@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pip_view/pip_view.dart';
+import 'package:trywidgets/ar/ar_home.dart';
 import 'package:trywidgets/pip/background.dart';
 
 class PipViewPage extends StatefulWidget {
@@ -22,7 +23,12 @@ class _PipViewPageState extends State<PipViewPage> {
               child: Center(
             child: ElevatedButton(
                 onPressed: () {
-                  PIPView.of(context)?.presentBelow(const PipBackground());
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ArHome(),
+                      ));
+                  // PIPView.of(context)?.presentBelow(const PipBackground());
                 },
                 child: const Text("PIP view")),
           )),
